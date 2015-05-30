@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--item name="lightOrange" type="color">#FFAA66CC</item-->
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="udacity" type="color">#F08C35</item>
+    <item name="grey" type="color">#424242</item>
+    <item name="white" type="color">#fff</item>
+
+
+</resources>

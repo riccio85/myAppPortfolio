@@ -4,6 +4,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -92,7 +93,7 @@ public class MainActivity extends ActionBarActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
+/*
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -100,7 +101,7 @@ public class MainActivity extends ActionBarActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
    public void customToast(String str, Drawable im){
        TextView text = (TextView) layout.findViewById(R.id.text);
@@ -108,7 +109,7 @@ public class MainActivity extends ActionBarActivity {
        ImageView image = (ImageView) layout.findViewById(R.id.image);
        image.setImageDrawable(im);
        Toast toast = new Toast(getApplication());
-      // toast.setGravity(Gravity.CLIP_HORIZONTAL, 0, 0);
+       toast.setGravity(Gravity.BOTTOM, 0, 50);
        toast.setDuration(Toast.LENGTH_SHORT);
        toast.setView(layout);
        toast.show();
